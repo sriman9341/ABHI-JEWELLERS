@@ -1,0 +1,135 @@
+.customer-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.customer-header {
+  background-color: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--color-black-lighter);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: var(--color-gold);
+}
+
+.main-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.main-nav a {
+  color: var(--color-text-main);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.main-nav a:hover, .main-nav a.active {
+  color: var(--color-gold);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: var(--color-gold);
+  color: var(--color-black);
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.customer-main {
+  flex: 1;
+}
+
+/* Footer */
+.customer-footer {
+  background-color: var(--color-black-light);
+  border-top: 1px solid var(--color-gold-dark);
+  padding-top: 64px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.footer-brand h2 {
+  color: var(--color-gold);
+  margin-bottom: 16px;
+}
+
+.footer-brand p {
+  color: var(--color-text-muted);
+  max-width: 300px;
+}
+
+.footer-links h3, .footer-contact h3 {
+  color: var(--color-white);
+  margin-bottom: 24px;
+  font-size: 1.1rem;
+}
+
+.footer-links a {
+  display: block;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+}
+
+.footer-links a:hover {
+  color: var(--color-gold);
+}
+
+.footer-contact p {
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--color-black-lighter);
+  padding: 24px 0;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
